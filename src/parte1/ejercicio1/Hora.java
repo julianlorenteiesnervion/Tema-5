@@ -1,8 +1,8 @@
 package parte1.ejercicio1;
 
 public class Hora {
-	protected int hora;
-	protected int minuto;
+	private int hora;
+	private int minuto;
 	
 	/**
 	 * @param hora
