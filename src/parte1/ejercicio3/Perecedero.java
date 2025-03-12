@@ -2,7 +2,7 @@ package parte1.ejercicio3;
 
 public class Perecedero extends Producto {
 
-	protected int caducaEn;
+	private int caducaEn;
 
 	/**
 	 * @param nombre
@@ -13,4 +13,20 @@ public class Perecedero extends Producto {
 		super(nombre, precio);
 		this.caducaEn = caducaEn;
 	}
+
+	@Override
+	public double calcular(int cantidad) {
+		double op;
+		
+		op = super.calcular(cantidad);
+		
+		switch (caducaEn) {
+		case 1 -> op /= 4;
+		case 2 -> op /= 3;
+		case 3 -> op /= 2;
+		}
+		
+		return op;
+	}
+	
 }

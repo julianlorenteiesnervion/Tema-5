@@ -2,8 +2,8 @@ package parte1.ejercicio3;
 
 public class Producto {
 	
-	protected String nombre;
-	protected double precio;
+	private String nombre;
+	private double precio;
 	
 	/**
 	 * @param nombre
@@ -33,6 +33,14 @@ public class Producto {
 	 */
 	public String getNombre() {
 		return nombre;
+	}
+	
+	/**
+	 * @param cantidad
+	 * @return Multiplicación del precio por la cantidad
+	 */
+	public double calcular(int cantidad) {
+		return precio * cantidad;
 	}
 
 	@Override
