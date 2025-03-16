@@ -14,6 +14,20 @@ public class Perecedero extends Producto {
 		this.caducaEn = caducaEn;
 	}
 
+	/**
+	 * @return caducaEn
+	 */
+	public int getCaducaEn() {
+		return caducaEn;
+	}
+
+	/**
+	 * @param caducaEn Setter
+	 */
+	public void setCaducaEn(int caducaEn) {
+		this.caducaEn = caducaEn;
+	}
+
 	@Override
 	public double calcular(int cantidad) {
 		double op;
@@ -27,6 +41,11 @@ public class Perecedero extends Producto {
 		}
 		
 		return op;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "\nCaduca en: " + this.caducaEn;
 	}
 	
 }
