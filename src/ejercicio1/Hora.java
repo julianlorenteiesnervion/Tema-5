@@ -1,4 +1,4 @@
-package parte1.ejercicio1;
+package ejercicio1;
 
 public class Hora {
 	private int hora;

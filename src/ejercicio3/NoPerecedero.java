@@ -1,4 +1,4 @@
-package parte1.ejercicio3;
+package ejercicio3;
 
 public class NoPerecedero extends Producto {
 

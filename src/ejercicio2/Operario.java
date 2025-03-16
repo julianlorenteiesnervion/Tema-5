@@ -1,4 +1,4 @@
-package parte1.ejercicio2;
+package ejercicio2;
 
 public class Operario extends Empleado {
 
