@@ -54,6 +54,9 @@ public class Electrodomestico {
 		} else {
 			this.peso = 5;
 		}
+		
+		consumo = Consumo.F;
+		color = Color.BLANCO;
 	}
 	
 	/**
