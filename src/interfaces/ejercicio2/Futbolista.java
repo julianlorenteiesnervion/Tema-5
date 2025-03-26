@@ -35,11 +35,9 @@ public class Futbolista implements Comparable<Futbolista> {
 	public int compareTo(Futbolista f) {
 		int res;
 		
-		if (numCamiseta < f.numCamiseta) {
-			res = -1;
-		} else if (numCamiseta > f.numCamiseta) {
-			res = 1;
-		} else {
+		res = f.numCamiseta - numCamiseta;
+		
+		if (res == 0) {
 			res = nombre.compareTo(f.nombre);
 		}
 		
