@@ -1,0 +1,7 @@
+Vehiculo
+- marca
+- modelo
+- color
+- matricula : String
+- motor : boolean
+- marcha : int
