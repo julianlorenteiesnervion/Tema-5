@@ -21,7 +21,7 @@ public class Turismo extends Vehiculo {
 		
 		switch (uso.toUpperCase()) {
 		case "PROFESIONAL", "PARTICULAR" -> {
-			this.uso = TipoUso.valueOf(uso);
+			this.uso = TipoUso.valueOf(uso.toUpperCase());
 		}
 		default -> {
 			this.uso = TipoUso.PARTICULAR;
@@ -36,7 +36,7 @@ public class Turismo extends Vehiculo {
 	public void setUso(String uso) {
 		switch (uso.toUpperCase()) {
 		case "PROFESIONAL", "PARTICULAR" -> {
-			this.uso = TipoUso.valueOf(uso);
+			this.uso = TipoUso.valueOf(uso.toUpperCase());
 		}
 		default -> {
 			this.uso = TipoUso.PARTICULAR;
