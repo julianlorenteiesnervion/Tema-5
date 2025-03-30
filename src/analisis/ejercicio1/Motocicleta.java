@@ -24,6 +24,10 @@ public class Motocicleta extends Vehiculo {
 		this.cilindrada = cilindrada;
 	}
 	
+	/**
+	 * Función para saber si la motocicleta necesita carnet para ser conducida
+	 * @return Devuelve si la motocicleta se puede conducir sin necesidad de un carnet (se necesitará carnet cuando la cilindrada de la motocicleta sea igual o superior a 125 CC).
+	 */
 	public boolean requiereCarnet() {
 		return cilindrada >= 125;
 	}

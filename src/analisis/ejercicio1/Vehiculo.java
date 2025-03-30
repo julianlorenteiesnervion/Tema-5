@@ -63,6 +63,10 @@ public abstract class Vehiculo {
 		arrancado = true;
 	}
 	
+	/**
+	 * Subimos la marcha si es posible
+	 * @return Devuelve si ha sido posible realizar el cambio de marcha
+	 */
 	public boolean subirMarcha() {
 		boolean op = false;
 		
@@ -74,6 +78,10 @@ public abstract class Vehiculo {
 		return op;
 	}
 	
+	/**
+	 * Bajamos la marcha si es posible
+	 * @return Devuelve si ha sido posible realizar el cambio de marcha
+	 */
 	public boolean bajarMarcha() {
 		boolean op = false;
 		
@@ -85,6 +93,11 @@ public abstract class Vehiculo {
 		return op;
 	}
 	
+	/**
+	 * Función para acelerar el vehículo
+	 * @param velocidad Velocidad que se desea alcanzar
+	 * @return Devuelve si ha sido posible realizar el cambio de velocidad
+	 */
 	public boolean acelerar(int velocidad) {
 		boolean op = false;
 		
@@ -117,6 +130,11 @@ public abstract class Vehiculo {
 		return op;
 	}
 	
+	/**
+	 * Función para desacelerar el vehículo
+	 * @param velocidad Velocidad que se desea alcanzar
+	 * @return Devuelve si ha sido posible realizar el cambio de velocidad
+	 */
 	public boolean desacelerar(int velocidad) {
 		boolean op = false;
 		
