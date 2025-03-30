@@ -1,7 +1,60 @@
-Vehiculo
-- marca
-- modelo
-- color
-- matricula : String
-- motor : boolean
-- marcha : int
+class Vehiculo
+- String marca
+- String modelo
+- String color
+- String matricula
+- boolean arrancado
+- int marcha
+- int velocidad
+
+Vehiculo(marca, modelo, color, matricula);
+getMarca();
+getModelo();
+getColor();
+getMatricula();
+getArrancado();
+getMarcha();
+getVelocidad();
+
+setColor();
+
+void parar();
+void arrancar();
+boolean subirMarcha();
+boolean bajarMarcha();
+boolean acelerar();
+boolean decelerar();
+
+class Turismo extends Vehiculo
+enum TipoUso {PROFESIONAL, PARTICULAR};
+
+- int numPlazas
+- TipoUso uso
+
+Turismo(marca, modelo, color, matricula, numPlazas, uso);
+getNumPlazas();
+getUso();
+
+setUso();
+
+class Camion extends Vehiculo
+- int pesoMaxAutorizado
+- boolean mercanciaPeligrosa
+
+Camion(marca, modelo, color, matricula, pesoMaxAutorizado, mercanciaPeligrosa);
+getPesoMaxAutorizado();
+getMercanciaPeligrosa();
+
+setMercanciaPeligrosa();
+
+class Motocicleta extends Vehiculo
+- int cilindrada
+
+Motocicleta(marca, modelo, color, matricula, cilindrada);
+getCilindrada();
+
+setCilindrada();
+
+boolean requiereCarnet() {
+return cilindrada >= 125;
+}
