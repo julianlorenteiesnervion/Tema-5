@@ -117,7 +117,7 @@ public abstract class Vehiculo {
 		return op;
 	}
 	
-	public boolean decelerar(int velocidad) {
+	public boolean desacelerar(int velocidad) {
 		boolean op = false;
 		
 		if (this.velocidad > velocidad && arrancado) {
