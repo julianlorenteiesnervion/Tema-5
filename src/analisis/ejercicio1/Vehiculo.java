@@ -1,6 +1,6 @@
 package analisis.ejercicio1;
 
-public abstract class Vehiculo {
+public class Vehiculo {
 	
 	private String marca;
 	private String modelo;
