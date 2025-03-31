@@ -13,6 +13,12 @@ public class Main {
 
 		coche.acelerar(120);
 		
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		coche.desacelerar(0);
 		
 		coche.bajarMarcha(); // Ponemos punto muerto
