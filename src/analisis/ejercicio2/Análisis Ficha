@@ -1,1 +1,28 @@
-class Ficha
+class abstract Ficha
+	- int id
+	- String titulo
+	
+	+ prestar (abstracto)
+	+ Getters
+
+class Libro extends Ficha
+	- String autor
+	- String editorial
+	
+	+ Getters
+	+ prestar
+		
+class Revista extends Ficha
+	- int numero
+	- int anno
+
+	+ Getters
+	+ prestar
+		
+class DVD extends Ficha
+	- String director
+	- int anno
+	- enum Tipo {PELICULA, DOCUMENTAL, SERIE}
+		
+	+ Getters
+	+ prestar
