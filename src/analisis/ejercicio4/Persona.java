@@ -21,5 +21,10 @@ public class Persona extends Contacto {
 	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "\nFecha: " + fecha;
+	}
 	
 }

@@ -21,5 +21,10 @@ public class Empresa extends Contacto {
 	public void setPaginaWeb(String paginaWeb) {
 		this.paginaWeb = paginaWeb;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "\nPágina web: " + paginaWeb;
+	}
 	
 }

@@ -41,5 +41,13 @@ public class Contacto {
 		Contacto other = (Contacto) obj;
 		return nombre.equals(other.nombre);
 	}
+
+	/**
+	 * Método toString para modificar cómo imprimimos por pantalla los datos
+	 */
+	@Override
+	public String toString() {
+		return "Nombre: " + nombre + "\nTeléfono: " + telefono;
+	}
 	
 }
