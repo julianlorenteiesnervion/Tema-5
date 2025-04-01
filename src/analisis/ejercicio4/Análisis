@@ -1,0 +1,16 @@
+class Contacto
+- String nombre
+- int telefono
+
++ getters / setters
++ equals
+
+class Persona extends Contacto
+- String fecha
+
++ getters / setters
+
+class Empresa extends Contacto
+- String paginaWeb
+
++ getters / setters
