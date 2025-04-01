@@ -6,11 +6,11 @@ public class Crud {
 	
 	private static HashSet<Contacto>listaContactos = new HashSet<>();
 	
-	public boolean create(Contacto contacto) {
+	public static boolean create(Contacto contacto) {
 		return listaContactos.add(contacto);
 	}
 	
-	public boolean read() {
+	public static boolean read() {
 		for (Contacto contacto : listaContactos) {
 			System.out.println(contacto);
 		}
@@ -18,7 +18,7 @@ public class Crud {
 		return listaContactos.isEmpty();
 	}
 	
-	public boolean update(Contacto contactoAntiguo, Contacto contactoNuevo) {
+	public static boolean update(Contacto contactoAntiguo, Contacto contactoNuevo) {
 		boolean op = false;
 		
 		if (listaContactos.remove(contactoAntiguo)) {
@@ -29,7 +29,7 @@ public class Crud {
 		return op;
 	}
 	
-	public boolean remove(Contacto contacto) {
+	public static boolean remove(Contacto contacto) {
 		return listaContactos.remove(contacto);
 	}
 }
