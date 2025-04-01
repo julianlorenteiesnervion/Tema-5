@@ -32,6 +32,10 @@ public class Contacto {
 		this.telefono = telefono;
 	}
 
+	/**
+	 * Método equals para comprobar si dos contactos son iguales
+	 * @return Devuelve si los nombres de ambos contactos coinciden (true) o no (false)
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		Contacto other = (Contacto) obj;
