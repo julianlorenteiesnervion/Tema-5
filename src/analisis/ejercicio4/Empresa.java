@@ -13,6 +13,14 @@ public class Empresa extends Contacto {
 		super(nombre, telefono);
 		this.paginaWeb = paginaWeb;
 	}
+	
+	/**
+	 * Constructor para la modificación de contactos
+	 * @param nombre Nombre del contacto
+	 */
+	public Empresa(String nombre) {
+		super(nombre);
+	}
 
 	public String getPaginaWeb() {
 		return paginaWeb;

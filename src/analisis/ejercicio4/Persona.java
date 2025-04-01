@@ -13,6 +13,14 @@ public class Persona extends Contacto {
 		super(nombre, telefono);
 		this.fecha = fecha;
 	}
+	
+	/**
+	 * Constructor para la modificación de contactos
+	 * @param nombre Nombre del contacto
+	 */
+	public Persona(String nombre) {
+		super(nombre);
+	}
 
 	public String getFecha() {
 		return fecha;

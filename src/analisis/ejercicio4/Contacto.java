@@ -15,6 +15,14 @@ public class Contacto {
 		this.nombre = nombre;
 		this.telefono = telefono;
 	}
+	
+	/**
+	 * Constructor para la modificación de contactos
+	 * @param nombre Nombre del contacto
+	 */
+	public Contacto(String nombre) {
+		this.nombre = nombre;
+	}
 
 	public String getNombre() {
 		return nombre;
