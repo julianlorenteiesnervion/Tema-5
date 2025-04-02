@@ -12,10 +12,6 @@ public class Main {
 		
 		Crud.read();
 		
-		Crud.create(new Contacto("pepe", 123));
-		Crud.read();
-		Crud.update(new Contacto("pepe"), new Contacto("pepe", 456));
-		Crud.read();
 	}
 
 }
