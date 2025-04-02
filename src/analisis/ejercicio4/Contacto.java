@@ -40,6 +40,11 @@ public class Contacto {
 		this.telefono = telefono;
 	}
 
+	@Override
+	public int hashCode() {
+		return Objects.hash(nombre);
+	}
+
 	/**
 	 * Método equals para comprobar si dos contactos son iguales
 	 * @return Devuelve si los nombres de ambos contactos coinciden (true) o no (false)
