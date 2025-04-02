@@ -60,7 +60,7 @@ public class CuentaBancaria {
 	 * @return Devuelve si se ha podido retirar la cantidad
 	 * (si la cantidad a retirar es menor que el saldo disponible)
 	 */
-	public boolean retirar(int cantidad) {
+	public boolean retirar(double cantidad) {
 		boolean op = false;
 		
 		if (cantidad < saldo) {
