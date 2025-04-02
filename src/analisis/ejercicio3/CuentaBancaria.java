@@ -81,6 +81,7 @@ public class CuentaBancaria {
 		
 		if (numTitulares < 3) {
 			titulares.add(titular);
+			numTitulares++;
 			op = true;
 		}
 		
@@ -93,7 +94,14 @@ public class CuentaBancaria {
 	 * @return Devuelve si se ha podido eliminar el titular
 	 */
 	public boolean deleteTitular(Titular titular) {
-		return titulares.remove(titular);
+		boolean op = false;
+		
+		if (titulares.remove(titular)) {
+			op = true;
+			numTitulares--;
+		}
+		
+		return op;
 	}
 	
 }
