@@ -103,5 +103,19 @@ public class CuentaBancaria {
 		
 		return op;
 	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(numCuenta);
+	}
+
+	/**
+	 * Método equals que devuelve si dos cuentas son iguales (es decir, si tienen el mismo número de cuenta)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		CuentaBancaria other = (CuentaBancaria) obj;
+		return numCuenta == other.numCuenta;
+	}
 	
 }

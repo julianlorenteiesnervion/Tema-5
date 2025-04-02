@@ -9,6 +9,7 @@ class CuentaBancaria
 + retirar
 + addTitular
 + deleteTitular
++ equals / hash
 
 class Titular
 - String dni
