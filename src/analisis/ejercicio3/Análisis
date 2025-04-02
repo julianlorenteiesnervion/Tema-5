@@ -10,6 +10,7 @@ class CuentaBancaria
 + addTitular
 + deleteTitular
 + equals / hash
++ toString
 
 class Titular
 - String dni
@@ -18,6 +19,7 @@ class Titular
 - int telefono
 
 + getters / setters
++ toString
 
 class CuentaAhorro extends CuentaBancaria
 - double cuotaMantenimiento
@@ -26,6 +28,7 @@ class CuentaAhorro extends CuentaBancaria
 + getters / setters
 + saldoInteres()
 + restarCuota()
++ toString
 
 class CuentaCorriente extends CuentaBancaria
 - double porcentajeTransaccion
@@ -34,3 +37,4 @@ class CuentaCorriente extends CuentaBancaria
 
 + getters / setters
 + addTransaccion
++ toString

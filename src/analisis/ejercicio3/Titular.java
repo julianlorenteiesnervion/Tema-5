@@ -1,5 +1,7 @@
 package analisis.ejercicio3;
 
+import java.util.Objects;
+
 public class Titular {
 	
 	private String dni;
@@ -28,6 +30,13 @@ public class Titular {
 		
 		this.telefono = telefono;
 	}
+	
+	// Constructor para actualizaciones
+	public Titular(String dni) {
+		if (dni != null && !dni.isBlank()) {
+			this.dni = dni;
+		}
+	}
 
 	public int getTelefono() {
 		return telefono;
@@ -47,6 +56,20 @@ public class Titular {
 
 	public String getApellidos() {
 		return apellidos;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(dni);
+	}
+
+	/**
+	 * Devuelve si dos titulares son iguales (es decir, si tienen el mismo dni)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		Titular other = (Titular) obj;
+		return dni.equals(other.dni);
 	}
 	
 }

@@ -117,5 +117,16 @@ public class CuentaBancaria {
 		CuentaBancaria other = (CuentaBancaria) obj;
 		return numCuenta == other.numCuenta;
 	}
+
+	@Override
+	public String toString() {
+		String mensaje = "Número de la cuenta: " + numCuenta + "\nSaldo: " + saldo + "\nNúmero de titulares: " + numTitulares;
+		
+		for (Titular titular : titulares) {
+			mensaje += "\n" + titular.getDni() + " " + titular.getNombre() + " " + titular.getApellidos() + " " + titular.getTelefono();
+		}
+		
+		return mensaje;
+	}
 	
 }
