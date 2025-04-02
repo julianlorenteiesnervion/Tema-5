@@ -33,12 +33,18 @@ public class CuentaCorriente extends CuentaBancaria {
 	}
 	
 	/**
-	 * Añade una transacción a la lista de transacciones
+	 * Añade una transacción a la lista de transacciones y actualiza el importe
 	 * @param transaccion Transacción a añadir
 	 * @return Devuelve si se ha podido añadir la transacción (true) o no (false)
 	 */
 	public boolean addTransaccion(Transaccion transaccion) {
-		return transacciones.add(transaccion);
+		boolean op = false;
+		
+		if (transacciones.add(transaccion)) {
+			super.setSaldo(super.getSaldo() + transaccion.getImporte());
+		}
+		
+		return op;
 	}
 
 	public List<Transaccion> getTransacciones() {

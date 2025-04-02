@@ -34,6 +34,10 @@ public class CuentaBancaria {
 		return saldo;
 	}
 
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
 	public List<Titular> getTitulares() {
 		return titulares;
 	}
