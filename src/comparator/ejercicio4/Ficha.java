@@ -2,7 +2,7 @@ package comparator.ejercicio4;
 
 import java.util.Comparator;
 
-public abstract class Ficha implements Comparator<Ficha> {
+public abstract class Ficha implements Comparable<Ficha> {
 	
 	private int id;
 	private String titulo;
@@ -37,8 +37,8 @@ public abstract class Ficha implements Comparator<Ficha> {
 	}
 
 	@Override
-	public int compare(Ficha o1, Ficha o2) {
-		return o1.getId() - o2.getId();
+	public int compareTo(Ficha o1) {
+		return id - o1.getId();
 	}
 
 }
