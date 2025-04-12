@@ -1,0 +1,40 @@
+class CuentaBancaria
+- int numCuenta
+- double saldo
+- int numTitulares
+- list<Titular> titulares
+
++ getters / setters
++ ingresar
++ retirar
++ addTitular
++ deleteTitular
++ equals / hash
++ toString
+
+class Titular
+- String dni
+- String nombre
+- String apellidos
+- int telefono
+
++ getters / setters
++ toString
+
+class CuentaAhorro extends CuentaBancaria
+- double cuotaMantenimiento
+- double interesAnual
+
++ getters / setters
++ saldoInteres()
++ restarCuota()
++ toString
+
+class CuentaCorriente extends CuentaBancaria
+- double porcentajeTransaccion
+- int numTransacciones
+- list<Transaccion> transacciones
+
++ getters / setters
++ addTransaccion
++ toString
